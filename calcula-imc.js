@@ -4,9 +4,9 @@ btn.addEventListener("click", function(e) {
 
     e.preventDefault();
 
-    const nome = document.querySelector("#nome");
+    const nome = document.querySelector("#nome").value;
+    const altura = document.querySelector("#altura").value;
+    const peso = document.querySelector("#peso").value;
 
-    const value = nome.value;
-
-    console.log(value)
+    console.log(nome, altura, peso);
 });
