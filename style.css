@@ -3,7 +3,9 @@
     --azul-fundo: #dce2f5;
     --cinza-claro: #dfdede;
     --cinza-escuro: #333333;
-    --vermelho: #f53434;
+    --vermelho: #a34c4c;
+    --outra-cor: #0f4d42;
+    
 
 }
 
@@ -26,4 +28,44 @@
     font-size: 1rem;
     padding-right: 2rem;
     color: var(--cinza-escuro);
+    margin: 2rem;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    padding: 2,5rem;
+    background: var(--cinza-claro);
+    margin: 2rem;
+    border: 2px solid var(--cinza-escuro);
+    padding: 1rem;
+}
+
+.input {
+    border-radius: 2px;
+    border: 2px solid var(--outra-cor);
+    background: var(--cinza-claro);
+}
+
+.formulario {
+    font-size: 20px;
+    color: var(--vermelho);
+    font-weight: bold;
+    margin: 12px;
+}
+
+.botao {
+    font-size: 15px;
+    color: var(--cinza-escuro);
+    margin: 8px;
+    padding: 2px;
+    border: 1px solid var(--outra-cor);
+}
+
+.botao:hover {
+    font-size: 20px;
+    color: var(--cinza-escuro);
+    border: 4px var(--outra-cor); 
 }
