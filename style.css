@@ -1,0 +1,18 @@
+:root {
+    --fonte-principal: 'Inter';
+    --azul-fundo: #cbd5f3;
+    --cinza-claro: #dfdede;
+    --cinza-escuro: #333333;
+}
+
+.caixa {
+    background: var(--azul-fundo);
+}
+
+
+.imc {
+    font-size: xx-large;
+    font: var(--fonte-principal);
+    font-weight: bold;
+    color: var(--cinza-escuro);
+}
