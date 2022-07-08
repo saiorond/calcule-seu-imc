@@ -10,3 +10,11 @@ btn.addEventListener("click", function(e) {
 
     console.log(nome, altura, peso);
 });
+
+function calculaImc(altura, peso) {
+
+    return peso * altura;
+}
+
+console.log(calculaImc);
+

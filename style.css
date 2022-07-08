@@ -47,6 +47,7 @@
     border-radius: 2px;
     border: 2px solid var(--outra-cor);
     background: var(--cinza-claro);
+    height: 20px;
 }
 
 .formulario {
