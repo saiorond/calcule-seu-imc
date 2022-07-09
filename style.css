@@ -10,13 +10,14 @@
 .container {
     display: flex;
     flex-direction: column;
+    background: var(--azul-fundo);
 }
 
 .caixa {
     flex-direction: column;
     background: var(--azul-fundo);
     max-width: 500px;
-    width: 50%;
+    width: 100%;
     padding: 20px;
     position: absolute;
     left: 50%;
@@ -32,6 +33,12 @@
     font-weight: bold;
     padding-left: 15px;
     color: rgb(43, 43, 43);
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 1px 3px 4px rgb(112, 110, 110); 
+}
+
+.imc2 {
+    text-decoration: underline;
 }
 
 .texto {
@@ -39,17 +46,20 @@
     font-size: 20px;
     padding-left: 15px;
     color: var(--outra-cor);
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+    line-height: 1.5em;
 }
 
 .usuario {
     width: auto;
     max-width: 500px;
-    width: 70%;
+    width: 100%;
     background: var(--azul-fundo);
     padding: 20px;
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 80%;
     transform: translate(-50%, -50%);
     border-radius: 3px;
 }
@@ -64,10 +74,11 @@
 }
 
 .formulario {
-    font-size: 20px;
+    font-size: 23px;
     color: var(--outra-cor);
     font-weight: bold;
     margin: 12px;
+    font-family:'Times New Roman', Times, serif;
 }
 
 #calcular {
@@ -88,8 +99,9 @@
 }
 
 #resultado {
-    font-size: 20px;
+    font-size: 23px;
     color: var(--outra-cor);
     font-weight: bold;
     padding: 20px;
+    font-family:'Times New Roman', Times, serif;
 }

@@ -18,6 +18,16 @@ function calculaImc() {
   let peso = document.getElementById("peso").value;
   let altura = document.getElementById("altura").value;
   let imc = peso / (altura * altura);
-  document.getElementById("resultado").innerHTML = `${nome}, seu ${imc} é: `;
-}
+  //document.getElementById("resultado").innerHTML = `${nome}, seu ${imc} é: `;
 
+if (imc < 18.5) {
+  document.getElementById("resultado").innerHTML = `${nome}, seu IMC é: ${imc}. E você está abaixo do peso recomendado.`
+} 
+
+else if (imc >= 18.5 && imc <= 24.9) {
+  document.getElementById("resultado").innerHTML = `${nome}, seu IMC é: ${imc}. E você está com peso adequado.`
+} 
+else if (imc > 25) {
+  document.getElementById("resultado").innerHTML = `${nome}, seu IMC é: ${imc}. E você está acima do peso recomendado.`
+}
+}
