@@ -70,7 +70,7 @@
     margin: 12px;
 }
 
-.botao {
+#calcular {
     width: 100%;
     height: 40px;
     cursor: pointer;
@@ -83,14 +83,13 @@
     margin-top: 10px;
 }
 
-.botao:hover {
+#calcular:hover {
     background: var(--outra-cor); 
 }
 
-.resultado {
+#resultado {
     font-size: 20px;
     color: var(--outra-cor);
     font-weight: bold;
-    margin-top: 20px;
-      
+    padding: 20px;
 }
