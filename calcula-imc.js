@@ -4,17 +4,21 @@ btn.addEventListener("click", function(e) {
 
     e.preventDefault();
 
-    const nome = document.querySelector("#nome").value;
-    const altura = document.querySelector("#altura").value;
-    const peso = document.querySelector("#peso").value;
+   const nome = document.querySelector("#nome").value;
+   const altura = document.querySelector("#altura").value;
+   const peso = document.querySelector("#peso").value;
 
-    console.log(nome, altura, peso);
+   let imc = peso / (altura * altura);
+   console.log(imc)
 });
 
-function calculaImc(altura, peso) {
 
-    return peso * altura;
-}
+//function calculaImc() {
+  //  let peso = document.getElementById("peso").value;
+  //  let altura = document.getElementById("altura").value;
+  //  let imc = peso / (altura * altura);
+  //  document.getElementById("resultado").innerHTML = imc;
+//}
 
-console.log(calculaImc);
+// console.log(calculaImc);
 

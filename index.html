@@ -21,7 +21,7 @@
 
 <body>
 
-    <main class="usuario">
+    <form class="usuario">
         <label for="nome" class="formulario">Insira seu nome</label>
         <input type="text" id="nome" class="input" required>
         
@@ -30,11 +30,13 @@
 
         <label for="peso" class="formulario">Insira seu peso</label>
         <input type="text" id="peso" class="input" required>
-
-        <input type="button" value="Calcular" id="enviar" onclick="calculaImc()">
-
-    </main>
     
+        <input type="button" value="Calcular" id="enviar" onclick="calculaImc()">
+    </form>
+
+
+    <p id="resultado">Resultado: </p>
+  
     
 </body>
 </html>
