@@ -1,24 +1,23 @@
-const btn = document.querySelector("#enviar");
+// const btn = document.querySelector("#enviar");
 
-btn.addEventListener("click", function(e) {
+//btn.addEventListener("click", function(e) {
 
-    e.preventDefault();
+//    e.preventDefault();
 
-   const nome = document.querySelector("#nome").value;
-   const altura = document.querySelector("#altura").value;
-   const peso = document.querySelector("#peso").value;
+//   const nome = document.querySelector("#nome").value;
+//   const altura = document.querySelector("#altura").value;
+//   const peso = document.querySelector("#peso").value;
 
-   let imc = peso / (altura * altura);
-   console.log(imc)
-});
+//   let imc = peso / (altura * altura);
+//   console.log(imc)
+//});
 
 
-//function calculaImc() {
-  //  let peso = document.getElementById("peso").value;
-  //  let altura = document.getElementById("altura").value;
-  //  let imc = peso / (altura * altura);
-  //  document.getElementById("resultado").innerHTML = imc;
-//}
-
-// console.log(calculaImc);
+function calculaImc() {
+  let nome = document.getElementById("nome").value;
+  let peso = document.getElementById("peso").value;
+  let altura = document.getElementById("altura").value;
+  let imc = peso / (altura * altura);
+  document.getElementById("resultado").innerHTML = imc;
+}
 

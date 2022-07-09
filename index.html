@@ -14,13 +14,16 @@
 
 </head>
 
+<div class="container">
 <header class="caixa">
     <h2 class="imc">Imc</h2>
     <p class="texto">significa <strong class="imc2">Índice de Massa Corporal</strong> é um calculo criado no século XIX pelo matemático Lambert Quételet, esse calculo possibilita medir se alguém está ou não com o peso ideal. Ou seja, o calculo registra se o peso está apropriado, acima ou abaixo do </p>
+
+</div>
 </header>
 
 <body>
-
+    <div class="container">
     <form class="usuario">
         <label for="nome" class="formulario">Insira seu nome</label>
         <input type="text" id="nome" class="input" required>
@@ -31,11 +34,15 @@
         <label for="peso" class="formulario">Insira seu peso</label>
         <input type="text" id="peso" class="input" required>
     
-        <input type="button" value="Calcular" id="enviar" onclick="calculaImc()">
+        <input type="button" value="Calcular" id="enviar" class="botao" onclick="calculaImc()">
+        
+        <p class="resultado">Resultado:</p> 
+    
     </form>
+    </div>
 
 
-    <p id="resultado">Resultado: </p>
+    
   
     
 </body>
