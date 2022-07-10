@@ -22,9 +22,9 @@ body {
     width: 100%;
     padding: 20px;
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -20%);
     border-radius: 5px;
 }
 
@@ -54,8 +54,7 @@ body {
 
 .titulo__formulario {
     font-size: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px;
     text-align: center;
     background-color: var(--outra-cor);
     color: var(--cinza-claro);
@@ -63,16 +62,15 @@ body {
 }
 
 .usuario {
-    display: block;
     width: auto;
     width: 100%;
     background: var(--azul-fundo);
     padding: 20px;
     position: absolute;
     left: 50%;
-    top: 90%;
-    transform: translate(-50%, -50%);
-    border-radius: 3px;
+    top: 80%;
+    transform: translate(-50%, -37.5%);
+    border-radius: 5px;
 }
 
 .input {
@@ -124,9 +122,9 @@ body {
     position: absolute;
     left: 50%;
     text-align: center;
-    top: 55rem;
-    transform: translate(-50%, -50%);
-    border-radius: 3px;
+    top: 90%;
+    transform: translate(-50%, 90%);
+    border-radius: 5px;
     margin: 10px 0;
 }
 
@@ -167,6 +165,17 @@ body {
     
 }
 
+@media screen and (max-width: 1400px) {
+    .caixa  {
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+    }
+    .texto {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width:500px) {
     body {
         display: flex;
@@ -174,6 +183,9 @@ body {
     }
     .caixa  {
         width: 460px;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -20%);
     }
     .texto {
         font-size: 16px;
