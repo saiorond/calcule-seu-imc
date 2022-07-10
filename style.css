@@ -1,5 +1,4 @@
 :root {
-    --fonte-principal: 'Inter';
     --azul-fundo: #dce2f5;
     --cinza-claro: #dfdede;
     --cinza-escuro: #969090;
@@ -10,26 +9,23 @@
 body {
     background-color: var(--cinza-escuro);
     font-family:'Times New Roman', Times, serif;    
+    display: flex;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+    display: block;
     background: var(--azul-fundo);
 }
 
 .caixa {
-    flex-direction: column;
     background: var(--azul-fundo);
-    max-width: 500px;
     width: 100%;
     padding: 20px;
     position: absolute;
-    left: 50%;
     top: 10%;
+    left: 50%;
     transform: translate(-50%, -10%);
     border-radius: 5px;
-    height: auto;
 }
 
 
@@ -48,24 +44,33 @@ body {
 }
 
 .texto {
-    font: var(--fonte-principal);
     font-size: 20px;
     padding-left: 15px;
+    padding-bottom: 15px;
     color: var(--outra-cor);
-    font-family:'Times New Roman', Times, serif;
     text-align: justify;
     line-height: 1.5em;
 }
 
+.titulo__formulario {
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: var(--outra-cor);
+    color: var(--cinza-claro);
+    margin-bottom: 10px;
+}
+
 .usuario {
+    display: block;
     width: auto;
-    max-width: 500px;
     width: 100%;
     background: var(--azul-fundo);
     padding: 20px;
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 90%;
     transform: translate(-50%, -50%);
     border-radius: 3px;
 }
@@ -109,12 +114,10 @@ body {
     color: rgb(68, 67, 67);
     font-weight: bold;
     padding: 20px;
-    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 20px;
 }
 
 .tabela {
-    width: auto;
-    max-width: 500px;
     width: 100%;
     background: var(--azul-fundo);
     padding: 20px;
@@ -152,3 +155,39 @@ body {
 
 #celula__tabela tr:hover {background-color: #407a6f;}
 
+.rodape {
+    background: var(--cinza-claro);
+}
+
+.caixa, .usuario, .tabela {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 20px;
+    
+}
+
+@media screen and (max-width:500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .caixa  {
+        width: 460px;
+    }
+    .texto {
+        font-size: 16px;
+    }
+    .titulo__formulario {
+        font-size: 18px;
+    }
+    .formulario {
+        font-size: 18px;
+    }
+    #celula__tabela {
+        font-size: 16px;
+    }
+    .titulo__tabela {
+        font-size: 18px;
+    }
+}
