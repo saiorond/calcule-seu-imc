@@ -9,7 +9,7 @@
     <link href="reset.css" rel="stylesheet"> 
     <link href="./style.css" rel="stylesheet">
 
-    <title>Cauculo do IMC</title>
+    <title>Caucule seu IMC</title>
     <script src="./calcula-imc.js" defer></script>
 
 </head>
@@ -26,13 +26,13 @@
     <form class="usuario">
         <h2 class="titulo__formulario">Calcule o seu IMC</h2>
         <label for="nome" class="formulario">Insira seu nome</label>
-        <input type="text" id="nome" class="input" required>
+        <input type="text" id="nome" class="input" placeholder="Maria" required>
         
         <label for="altura" class="formulario">Insira sua altura</label>
-        <input type="text" id="altura" class="input" required>
+        <input type="text" id="altura" class="input" placeholder="1.60" required>
 
         <label for="peso" class="formulario">Insira seu peso</label>
-        <input type="text" id="peso" class="input" required>
+        <input type="text" id="peso" class="input" placeholder="70" required>
         
         <input type="button" value="Calcular" id="calcular" onclick="calculaImc()">
         
